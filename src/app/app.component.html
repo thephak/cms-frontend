@@ -1,0 +1,42 @@
+<div class="page">
+  <div class="banner">
+    <h1>Contents</h1>
+  </div>
+  <br>
+  <div class="container">
+    <div class="col-xs-12 col-md-8 offset-md-2">
+      <li *ngFor="let content of contents">
+        <div class="content">
+          <div class="content-header">
+            <span class="title">
+              {{ content.title }}
+            </span>
+            <br>
+            <span class="card-author">
+              Author: {{ content.author }} 
+            </span>  
+            <br>
+            <span class="date-posted">
+              {{ content.published_date }} 
+            </span>
+          </div>
+          <br>
+          <div class="content-body">
+            <span class="summary" >
+              {{ content.summary }}
+            </span>
+            <br>
+            <span class="content" >
+              {{ content.content }} 
+            </span>      
+          </div>
+        </div>  
+        <div class="row-break"><br></div>
+      </li>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+    </div>
+  </div>
+</div>
